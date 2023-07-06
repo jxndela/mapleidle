@@ -3,15 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.cs">
+    <link rel="stylesheet" href="css/index.css">
     <title>Maplestory Idle</title>
-    <style>
-      /* Add your CSS styles here */
-    </style>
     <script src="js/index.js" ></script>
 </head>
 
-<body>    
+
+<body>
+    <!--Navigation bar-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="#">Maplestory Idle</a>
@@ -30,10 +29,71 @@
           </div>
         </nav>
     </header>
-    <div class="game">
-        <div id="timer">00:00</div>
-        <button class ="playerAction">Attack</button>
+
+    
+    <!--Main Website-->
+    <div class="container-fluid">
+
+        <!--Enemy Health Bar-->
+        <div id="enemyHPBarContainer">
+            <div id="enemyHPBar"></div>
+        </div>
+
+        <!--Attack progress bar-->
+        <div id="attackBarContainer" >
+            <div id="attackBar"></div>
+        </div>
+
+        <!--Kill Count-->
+        <p id="killCount">Kill Count: 0</p>
+
+        <!--Player actions-->
+        <button id ="attackButton">Attack</button>
+
+        <!--Player stats-->
+        <div id="playerStatsWindow" class="col-3 bg-dark rounded" style="color:white">
+            <p class="text-center" style="color:rgb(223, 223, 35)">CHARACTER STAT</p>
+            
+            <div class="row " id ="statName">
+                <div class="col-4 rounded-left bg-success">Name</div>
+                <div class="col-7 rounded-right bg-light text-dark">Jon</div>
+            </div>
+            <div class="row" id ="statClass">
+                <div class="col-4 rounded-left bg-success">Class</div>
+                <div class="col-7 rounded-right bg-light text-dark">Paladin</div>
+            </div>
+            <div class="row" id ="statDamage">
+                <div class="col-4 rounded-left bg-success">Damage</div>
+                <div class="col-7 rounded-right bg-light text-dark">~</div>
+            </div>
+            <div class="row" id ="statMP">
+                <div class="col-4 rounded-left bg-success">HP</div>
+                <div class="col-7 rounded-right bg-light text-dark">10/10</div>
+            </div>
+            <div class="row" id ="statMP">
+                <div class="col-4 rounded-left bg-success">MP</div>
+                <div class="col-7 rounded-right bg-light text-dark">10/10</div>
+            </div>
+            <div class="row" id ="statSTR">
+                <div class="col-4 rounded-left bg-success">STR</div>
+                <div class="col-7 rounded-right bg-light text-dark">10</div>
+            </div>
+            <div class="row" id ="statDEX">
+                <div class="col-4 rounded-left bg-success">DEX</div>
+                <div class="col-7 rounded-right bg-light text-dark">10</div>
+            </div>
+            <div class="row" id ="statINT">
+                <div class="col-4 rounded-left bg-success">INT</div>
+                <div class="col-7 rounded-right bg-light text-dark">10</div>
+            </div>
+            <div class="row" id ="statLUK">
+                <div class="col-4 rounded-left bg-success">LUK</div>
+                <div class="col-7 rounded-right bg-light text-dark">10</div>
+            </div>
+            <div></div>
+        </div>
     </div>
+
 </body>
 
 </html>
